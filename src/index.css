@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #1c1e27;
+  --bgSoft: #262730;
+  --bgDark: #15171e;
+  --Black: #08030b;
+  --textColor: white;
+  --primaryColor: #f04c96;
+  --primaryColorSoft: #f06fa2;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--textColor);
+  font-family: sans-serif;
+}
+
+.api-section {
+}
+
+h2 {
+  color: var(--primaryColor);
+  font-size: large;
+  font-weight: bold;
+}
+
+.header-section {
+  background-color: var(--bgDark);
+}
+
+.btn {
+  background-color: var(--primaryColor);
+  color: white;
+  width: 100px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--primaryColor);
+  color: white;
+  width: 80px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--primaryColorSoft);
+}
+
+.btn-secondary {
+  background-color: var(--bgSoft);
+  color: white;
+  width: 80px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: var(--bgDark);
+}
+
+textarea {
+  width: 100%;
+  background-color: var(--bgSoft);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+input {
+  width: 100%;
+  background-color: var(--bgSoft);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+select {
+  width: 100%;
+  background-color: var(--bgSoft);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+textarea::placeholder {
+  color: grey;
+  font-size: small;
+  padding: 4px;
+}
+
+input::placeholder {
+  color: grey;
+  font-size: small;
+  padding: 4px;
+}
+
+.api-sequence {
+  height: calc(100vh - 270px);
+  background-color: var(--bgDark);
+  padding: 8px;
+  border-radius: 4px;
+  margin: 20px 0 0;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: #f7f4ed;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #e0cbcb;
+  border-radius: 100vh;
+  border: 3px solid #f6f7ed;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #c0a0b9;
+}
+
+.jsoneditor-menu {
+  /* visibility: hidden; */
+}
+
+.jsoneditor-tree {
+  background-color: var(--bgDark);
+  color: white;
+}
+
+tr.jsoneditor-highlight,
+tr.jsoneditor-selected {
+  background-color: transparent;
+}
+
+.jsoneditor-menu,
+.jsoneditor-frame {
+  background-color: var(--bgDark);
+  color: white;
+}
+
+.jsoneditor-menu > li {
+  background-color: var(--bgDark);
+  color: white;
+  border: none;
+  box-shadow: none;
+}
+
+/* div.jsoneditor-tree button.jsoneditor-contextmenu-button {
+  display: none;
+} */
+
+.jsoneditor-navigation-bar {
+  display: none;
+}
+
+/* .jsoneditor-button .jsoneditor-dragarea {
+  display: none;
+} */
+
+.jsoneditor-button .jsoneditor-contextmenu-button {
+  display: none;
+}
+
+.jsoneditor-tree-inner {
+  border: none;
+}
+
+.jsoneditor-outer .has-main-menu-bar .has-nav-bar {
+  border: none;
+}
+
+.jsoneditor-expandable .jsoneditor-expanded {
+  display: none;
+}
+
+div.jsoneditor-field,
+div.jsoneditor-value,
+div.jsoneditor td,
+div.jsoneditor th,
+div.jsoneditor textarea,
+pre.jsoneditor-preview,
+.jsoneditor-schema-error,
+.jsoneditor-popover {
+  color: red;
+}
+
+#objectDisplay {
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+/* Clickable Elements (Key-Value Pairs) */
+.clickable {
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.clickable:hover {
+  border: dotted 1px white;
+}
+
+/* Nested Objects (Indented Child Objects) */
+.nested {
+  margin-left: 20px;
+  padding-left: 10px;
+  border-left: 2px solid #ddd;
+  margin-top: 5px;
+}
+
+.jsoneditor-values {
+  margin-left: 0 !important;
+}
+
+div.jsoneditor-value.jsoneditor-empty::after {
+  content: "";
+  color: #999;
+}
+
+strong {
+  color: #333;
+}
