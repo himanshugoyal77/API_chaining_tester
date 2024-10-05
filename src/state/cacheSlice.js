@@ -1,6 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {};
+const initialState = {
+  select_api: {
+    url: "",
+    method: "GET",
+  },
+};
 
 const cacheSlice = createSlice({
   name: "cache",

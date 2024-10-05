@@ -17,7 +17,6 @@ const ApiInputs = ({ response, setResponse, body }) => {
   });
 
   const cache = useSelector((state) => state.cache);
-  console.log("newRequest", newRequest);
 
   const appendToUrl = (param) => {
     const req = { ...newRequest };
@@ -149,10 +148,17 @@ const ApiInputs = ({ response, setResponse, body }) => {
         </div>
 
         <div
-          className="mt-4 h-8 w-8 bg-bgSoft flex items-center justify-center rounded-sm text-lg cursor-pointer"
-          onClick={addApiSequence}
+          className="mt-4 h-8 w-40  bg-primaryColor rounded-md flex items-center justify-center text-lg cursor-pointer"
+          onClick={async () => {
+            await addApiSequence();
+            setNewRequest({
+              name: "",
+              url: "",
+              method: "GET",
+            });
+          }}
         >
-          +
+          <span className="mr-2">+ </span> Make Request
         </div>
 
         {showTooltip && (
