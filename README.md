@@ -1,8 +1,6 @@
-# React + Vite
+Devzery Frontend Technical Assignment: API
+Chaining Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![image](https://github.com/user-attachments/assets/3a01e6f1-8e57-403e-af61-09a389ee50b0)
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![image](https://github.com/user-attachments/assets/7267956c-a42c-4c87-8747-ce132cbb5922)
