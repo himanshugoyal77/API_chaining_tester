@@ -2,9 +2,9 @@
 # Devzery Frontend Technical Assignment: API Chaining Dashboard
 
 
-I have created a comprehesive Dashboard to test API's using features like chaining of responses in request body or in query parameters, responsive layout and proper state management.
+I have created a comprehesive Dashboard to test APIs using features like chaining of responses in request body or in query parameters, responsive layout and proper state management.
 I have used redux to store the responses of the API calls. User can select from dropdown which API reponse to use for chaining.
-Also added feature to customize headers.
+Also added feature to customize headers. explore full working https://drive.google.com/file/d/1kBxP5C8VwtZdCTBQwTCfG5BXor4qpNXh/view
 
 ## Screenshots
 
