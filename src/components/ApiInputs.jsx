@@ -78,7 +78,6 @@ const ApiInputs = ({ response, setResponse, body }) => {
         },
       })
     );
-    //setNewRequest({});
   };
 
   const editApiSequence = (api) => {
@@ -117,7 +116,6 @@ const ApiInputs = ({ response, setResponse, body }) => {
                 setNewRequest((prev) => ({ ...prev, name: e.target.value }))
               }
             />
-            {/* dropown here */}
             <select
               id="method"
               className="w-20 ml-2"
@@ -133,7 +131,7 @@ const ApiInputs = ({ response, setResponse, body }) => {
             </select>
           </div>
           <input
-            type="text"
+            type="url"
             id="apiUrl"
             className="w-full mr-2"
             value={newRequest.url || ""}
@@ -142,7 +140,6 @@ const ApiInputs = ({ response, setResponse, body }) => {
               const x = e.clientX;
               const y = e.clientY;
               setPosition({ x, y });
-
               appendToolTip(x, y);
             }}
             onChange={(e) => {
@@ -162,8 +159,7 @@ const ApiInputs = ({ response, setResponse, body }) => {
           <div
             style={{
               position: "absolute",
-              top: `${position.x - 350}px`,
-              left: `${position.y + 150}px`,
+              left: `${position.y + 120}px`,
               zIndex: "9999",
             }}
             className={`w-80 h-96 bg-bgDark rounded-md border border-primaryColor`}

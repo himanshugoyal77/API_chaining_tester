@@ -1,21 +1,32 @@
 export const get = async (url) => {
-  console.log("url", url);
-  const response = await fetch(url);
-  return await response.json();
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
 export const create = async (url, postData) => {
-  const response = await fetch(url, {
-    method: "POST",
-    body: JSON.stringify(postData),
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
-  return await response.json();
+  try {
+    const response = await fetch(url, {
+      method: "POST",
+      body: JSON.stringify(postData),
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+    return await response.json();
+  } catch (error) {
+    throw new Error(error);
+  }
 };
 
 export const getSingle = async (url) => {
-  const response = await fetch(url);
-  return await response.json();
+  try {
+    const response = await fetch(url);
+    return await response.json();
+  } catch (error) {
+    throw new Error(error);
+  }
 };

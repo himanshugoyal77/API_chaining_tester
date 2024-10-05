@@ -109,7 +109,7 @@ const HeaderBuilder = () => {
               className="ml-3 text-white"
               onClick={() => removeHeader(key)}
             >
-              <FaX />
+              <FaX size={10} />
             </button>
           </div>
         );
