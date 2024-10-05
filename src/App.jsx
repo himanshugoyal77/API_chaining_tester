@@ -7,7 +7,7 @@ import { Provider } from "react-redux";
 const App = () => {
   return (
     <Provider store={store}>
-      <div className="flex items-start h-full w-screen">
+      <div className="flex flex-col md:flex-row items-start h-full w-screen">
         <Toaster
           position="bottom-right"
           toastOptions={{

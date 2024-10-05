@@ -48,7 +48,7 @@ const HeaderBuilder = () => {
   };
 
   return (
-    <div className="header-section flex flex-col w-1/4 h-screen p-4">
+    <div className="header-section flex flex-col md:w-1/4 h-screen p-4">
       <button
         className="mb-3 w-full h-10 bg-bgSoft rounded-md text-primaryColor
         hover:bg-bg hover:text-white transition-all ease-in-out duration-300

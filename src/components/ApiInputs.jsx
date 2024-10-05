@@ -90,7 +90,7 @@ const ApiInputs = ({ response, setResponse, body }) => {
   };
 
   return (
-    <div className="flex-grow flex flex-col">
+    <div className="w-full flex-grow flex flex-col">
       <h4>Test Case Title</h4>
 
       <textarea

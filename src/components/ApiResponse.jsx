@@ -22,7 +22,6 @@ const ApiResponse = ({ response, body, setBody }) => {
   useEffect(() => {
     const jsoneditorValue = document.getElementsByClassName("jsoneditor-value");
 
-
     for (let i = 0; i < jsoneditorValue.length; i++) {
       jsoneditorValue[i].addEventListener("focus", () => {
         const activeKey = Object.keys(body).find(
@@ -63,15 +62,13 @@ const ApiResponse = ({ response, body, setBody }) => {
 
   const appendToBody = (key) => {
     return (value) => {
-
       const newBody = { ...body };
       newBody[key] = value;
-  
+
       setBody(newBody);
       activeDiv.innerText = `"${value}"`;
     };
   };
-
 
   const insert = () => {
     const elements = document.getElementsByClassName(
@@ -122,7 +119,7 @@ const ApiResponse = ({ response, body, setBody }) => {
   };
 
   return (
-    <div className="w-1/3 h-full flex flex-col justify-between gap-4">
+    <div className="w-full md:w-1/3 h-full flex flex-col justify-between gap-4">
       <div className="h-full request-body relative bg-bgDark rounded-md">
         <div
           className="h-1/2 flex justify-between items-center bg-bgSoft px-4 py-2 rounded-tl-md

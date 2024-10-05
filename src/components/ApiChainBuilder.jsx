@@ -7,7 +7,7 @@ const ApiChainBuilder = () => {
   const [body, setBody] = useState({});
 
   return (
-    <div className="api-section flex flex-col w-3/4 p-4">
+    <div className="api-section flex flex-col w-full md:w-3/4 p-4">
       <div className="flex items-center justify-between">
         <h2>New Test Case</h2>
         <div className="flex gap-4 items-center justify-between">
@@ -18,7 +18,7 @@ const ApiChainBuilder = () => {
         </div>
       </div>
 
-      <div className="mt-4 h-full flex items-start gap-4">
+      <div className="mt-4 h-full flex flex-col  md:flex-row items-start gap-4">
         <ApiInputs {...{ response, setResponse, body }} />
         <ApiResponse {...{ response, setBody, body }} />
       </div>
